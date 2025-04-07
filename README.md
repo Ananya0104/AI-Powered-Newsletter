@@ -14,13 +14,6 @@ An AI-powered tool that generates well-structured newsletters by automatically e
 
 ---
 
-## 📸 Streamlit App Screenshot
-
-![Streamlit Screenshot](images/streamlit_app_screenshot.png)
-
-> Replace the above path with the actual image path after placing the screenshot in the `images` folder.
-
----
 
 ## 🏗️ File Structure
 
