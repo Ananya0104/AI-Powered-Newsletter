@@ -56,7 +56,7 @@ Or directly inside the script (not recommended for production).
 
 ## 🧠 How It Works
 
-1. You input a topic or query (e.g., "artificial intelligence").
+1. You input a topic or query (e.g., "Alex Parker(Software Engineer, 35, India)").
 2. The script scrapes the top 10 news articles from Google News.
 3. Each article is summarized using OpenAI's GPT model.
 4. The output is displayed as a formatted newsletter with title and summary.
@@ -95,6 +95,6 @@ IIT Jodhpur
 ## 📌 Future Improvements
 
 - [ ] Email delivery support
-- [ ] Transalation to desired languages.
+- [ ] Translation to desired languages.
 
 ---
