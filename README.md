@@ -81,7 +81,7 @@ streamlit run app.py
 
 ## 📄 Example Output
 
-![Streamlit Screenshot](images/streamlit_app_screenshot.png)
+![Streamlit Screenshot](streamlit_app_screenshot.png)
 ---
 
 ## ✍️ Author
