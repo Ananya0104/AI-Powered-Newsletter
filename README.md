@@ -77,8 +77,6 @@ Then open the provided `localhost` link in your browser.
 
 ![Streamlit Screenshot](streamlit_app_screenshot.png)
 
-> Replace this image with an actual screenshot of your app and save it as `screenshots/streamlit_ui.png`.
-
 ---
 
 ## 📁 Output Sample
