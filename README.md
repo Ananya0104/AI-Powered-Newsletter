@@ -1,100 +1,106 @@
 
-# 🧠 AI-Powered Newsletter Generator 📰
+# 📰 AI-Powered Newsletter Generator
 
-An AI-powered tool that generates well-structured newsletters by automatically extracting, summarizing, and formatting the latest news based on your query using GPT-3.5.
-
----
-
-## 🌟 Features
-
-- 🔎 Fetches top articles from Google News based on user input.
-- 🤖 Uses OpenAI's GPT model to summarize full articles.
-- 📰 Formats the output into a clear, readable newsletter.
-- 💻 Streamlit UI for interactive use.
+An AI-powered personalized newsletter generator that fetches relevant news articles based on your profession and country using RSS feeds, extracts content, summarizes it using Hugging Face Transformers, and generates a Markdown newsletter.
 
 ---
 
+## 🚀 Features
 
-## 🏗️ File Structure
-
-```
-├── extracter.py             # Core logic: fetch, summarize, and generate newsletter
-├── README.md                # Project documentation
-├── requirements.txt         # Python dependencies (optional but recommended)
-└── streamlit_app_screenshot.png
-```
+- Personalized news based on **Profession** and **Country**
+- Pulls top stories from relevant **RSS Feeds**
+- Uses Hugging Face Transformers for **text summarization** and **classification**
+- Automatically generates a neatly formatted **Markdown newsletter**
+- Simple **CLI interface** and **Streamlit web app** version available
 
 ---
 
-## ⚙️ Setup Instructions
+## 📦 Installation
 
-### 🔧 1. Clone the Repository
+1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/your-username/ai-newsletter-generator.git
-cd ai-newsletter-generator
+git clone https://github.com/yourusername/newsletter-generator.git
+cd newsletter-generator
 ```
 
-### 📦 2. Install Dependencies
+2. **Install the requirements**:
+
+Make sure you have Python 3.7+ installed.
 
 ```bash
 pip install -r requirements.txt
 ```
 
+---
 
-### 🔑 3. Add OpenAI API Key
+## 🧠 Setup Hugging Face API
 
-Set your API key as an environment variable:
+Add your [Hugging Face API token](https://huggingface.co/settings/tokens) in the script:
 
-```bash
-export OPENAI_API_KEY="your_api_key_here"
+```python
+HF_TOKEN = "your_huggingface_api_token"
 ```
-
-Or directly inside the script (not recommended for production).
 
 ---
 
-## 🧠 How It Works
+## 🖥️ Run the CLI Version
 
-1. You input a topic or query (e.g., "Alex Parker(Software Engineer, 35, India)").
-2. The script scrapes the top 10 news articles from Google News.
-3. Each article is summarized using OpenAI's GPT model.
-4. The output is displayed as a formatted newsletter with title and summary.
+```bash
+python main.py
+```
+
+You will be prompted with:
+
+```
+Enter details in format: Name(Profession, Age, Country):
+> Ananya(Technology, 21, India)
+```
+
+This generates a Markdown file with relevant news summaries.
 
 ---
 
-## 🚀 Running the App
+## 🌐 Run the Streamlit App
 
-### 🐍 CLI (Command Line)
-
-```bash
-python extracter.py
-```
-
-### 🌐 Streamlit Web App
+To run the interactive web app:
 
 ```bash
 streamlit run app.py
 ```
 
+Then open the provided `localhost` link in your browser.
+
 ---
 
-## 📄 Example Output
+## 📸 Streamlit App Screenshot
 
 ![Streamlit Screenshot](streamlit_app_screenshot.png)
----
 
-## ✍️ Author
-
-**Ananya Nagpal**  
-B.Tech, Electrical Engineering  
-IIT Jodhpur
+> Replace this image with an actual screenshot of your app and save it as `screenshots/streamlit_ui.png`.
 
 ---
 
-## 📌 Future Improvements
+## 📁 Output Sample
 
-- [ ] Email delivery support
-- [ ] Translation to desired languages.
+The generated newsletter is saved as a Markdown file, e.g.:
+
+```
+Ananya_Newsletter.md
+```
 
 ---
+
+## 🗂️ Folder Structure
+
+```
+.
+├── app.py
+├── main.py
+├── requirements.txt
+├── README.md
+├── streamlit_app_screenshot.png
+```
+
+---
+
